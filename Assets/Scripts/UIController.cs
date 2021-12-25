@@ -87,6 +87,14 @@ public class UIController : MonoBehaviour
     }
 
     /// <summary>
+    /// выход из игры
+    /// </summary>
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
+    /// <summary>
     /// поменять состояния двух канвас групп - первый отключить, второй включить
     /// </summary>
     /// <param name="whatOff"></param>

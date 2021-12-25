@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour, ICharacterCubes
                 transform.rotation = Quaternion.LookRotation(_rb.velocity);
             }
         }
-        else if(_gameEnded)
+        else if(_gameEnded || _isPicking)
         {
             _rb.velocity = Vector3.zero;
         }
